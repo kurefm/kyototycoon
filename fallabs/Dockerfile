@@ -20,5 +20,7 @@ RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.8/main/" > /etc/apk/repositories 
     rm -rf kyotocabinet-1.2.77* kyototycoon-0.9.56* && \
     apk del .build-deps
 
+EXPOSE 1978
+
 CMD ["ktserver"]
 
